@@ -6,6 +6,7 @@
   "mixins": [
   ],
   "client": [
+    "mainMenuButton"
   ],
   "injectors": {
     "defaultRequire": 1
