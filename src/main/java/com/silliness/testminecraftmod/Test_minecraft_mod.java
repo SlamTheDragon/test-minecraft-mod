@@ -12,6 +12,14 @@ public class Test_minecraft_mod implements ModInitializer {
         Logging.LOGGER.info("Imma initialize the randomizer like idk wtf lmao");
         Logging.LOGGER.info("The...");
         Logging.LOGGER.info(constants.testStringConstant, "The... \"{0}\" thing");
-        new Thread(randomizer::initRandomizer).start();
+        new Thread(new Runnable() {
+            final randomizer rand = new randomizer();
+
+            @Override
+            public void run() {
+                rand.initRandomizer();
+            }
+        }).start();
+
     }
 }
