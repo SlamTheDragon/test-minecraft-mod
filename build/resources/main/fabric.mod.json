@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "test-minecraft-mod",
+  "version": "1.0-SNAPSHOT",
+  "name": "test-minecraft-mod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/SlamTheDragon/test-minecraft-mod"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/test-minecraft-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.silliness.testminecraftmod.client.Test_minecraft_modClient"
+    ],
+    "main": [
+      "com.silliness.testminecraftmod.Test_minecraft_mod"
+    ]
+  },
+  "mixins": [
+    "test-minecraft-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric": "*",
+    "minecraft": "1.20.6"
+  }
+}
